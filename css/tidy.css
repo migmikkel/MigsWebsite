@@ -138,6 +138,17 @@ a:active
 	position:absolute;
 }
 
+.divide-cover-image 
+{
+	background-image:url(../img/divide_cover_image.jpg);
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	top:0;
+	position:absolute;
+}
+
 .icon-and-title-flex
 {
 	display: -ms-flexbox;
