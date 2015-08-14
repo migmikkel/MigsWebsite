@@ -149,6 +149,17 @@ a:active
 	position:absolute;
 }
 
+.mrbob-cover-image 
+{
+	background-image:url(../img/mrbob_cover_image.jpg);
+	background-size:cover;
+	background-position:center;
+	height:50%;
+	width:100%;
+	top:0;
+	position:absolute;
+}
+
 .icon-and-title-flex
 {
 	display: -ms-flexbox;
