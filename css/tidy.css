@@ -82,35 +82,50 @@ a:active
 
 .works-card
 {
-	width: 16.66%;
+	width: 192px;
 	height: auto; 
 	float: left;
-	padding: 1%;
+	padding: 0%;
+    overflow: hidden;
+    padding-bottom: 1.2%;
 }
 
-.work-title
-{
-	display: inline-block;
-	padding: 7%;
+.card1 {
+    margin-left: 1%;
 }
 	
 .works-subcard
 {
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
-   	border-top-left-radius: 2px;
-   	border-top-right-radius: 2px;
-   	border-bottom-right-radius: 2px;
-   	border-bottom-left-radius: 2px;
    	position: relative;
+    height: 192px;
+    overflow: hidden;
 }
 	
 .works-subcard:hover
 {
 	cursor: pointer;
-	box-shadow:rgba(0, 0, 0, 0.3) 0 5px 12px 0;
-	-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 5px 12px 0;
-	-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 5px 12px 0;
+	box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
+	-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
+	-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
+}
+
+.work-title
+{
+	display: inline-block;
+    width: 100%;
+	padding: 7%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: margin-top 0.2s;
+}
+
+#work-img
+{
+    width: 256px;
+    margin-left: -32px;
+    margin-top: -32px;
 }
 
 .content-works
@@ -251,12 +266,6 @@ a:active
 {
 	margin-top: 1%;
 	display: block;
-}
-
-.top-corners-rounded
-{
-   	border-top-left-radius: 2px;
-   	border-top-right-radius: 2px;
 }
 
 .watermark
