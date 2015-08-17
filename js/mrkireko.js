@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".works-subcard").mouseenter(function(){
-        $(this).children(".work-title").css("margin-top", "-64px");
-        $(this).children("#work-img").css("width", "192px");
+        $(this).children(".work-title").css("margin-top", "-75px");
+        $(this).children("#work-img").css("width", "100%");
         $(this).children("#work-img").css("margin-left", "0");
         $(this).children("#work-img").css("margin-top", "0");
     });

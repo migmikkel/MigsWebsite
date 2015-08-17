@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<!-- CHANGE TITLE AND META ACCORDINGLY -->
-		<title>Mr. Bob's Site</title>
+        <title>Mr. Bob's Site</title>
 		<meta name="description" content="Mikkel Damgaard, Designer and Developer for the Web">
 		<meta name="keywords" content="Mig, Mikkel, Mig Mikkel, Mig_, Mig_Mikkel">
 		<meta name="copyright" content="Copyright © 2015 Mikkel Damgaard. All Rights Reserved.">
@@ -10,11 +10,12 @@
 		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
 		<link rel="stylesheet" href="css/tidy.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/mrkireko.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
 		<link rel="import" href="bower_components/paper-fab/paper-fab.html">
 		<link rel="import" href="bower_components/core-icons/core-icons.html">
@@ -64,76 +65,78 @@
      		<span class="text-subtitle padtopandbottom">Other Cool People</span>
 			<br>
      		<!-- If needed, delete from here -->
-			<div class="works-card">
-     			<a href="index.html">
-     				<div class="works-subcard">
-     					<img class="top-corners-rounded" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/85/8505f602b3a8e09e332fdc53f4006f59c780dd00_full.jpg" style="width: 100%"></img>
-     					<span class="work-title">Mig_Mikkel</span> 
-     					<paper-ripple fit></paper-ripple>
-     				</div>
-     			</a>		
-     		</div>
-			<!-- To here-->
-			
-			<!-- If needed, delete from here -->
-			<div class="works-card">
-     			<a href="Divide.html">
-     				<div class="works-subcard">
-     					<img class="top-corners-rounded" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c0/c025910d865cf3df1e9df04041e1820c13d038f2_full.jpg" style="width: 100%"></img>
-     					<span class="work-title">Divide</span> 
-     					<paper-ripple fit></paper-ripple>
-     				</div>
-     			</a>		
-     		</div>
-			<!-- To here-->
-			
-			<!-- If needed, delete from here -->
-     		<div class="works-card">
-     			<a href="chromax.html">
-     				<div class="works-subcard">
-     					<img class="top-corners-rounded" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f7bb8347f8787ead3d199136af166fbcbacfed0c_full.jpg" style="width: 100%"></img>
-     					<span class="work-title">Chr0max</span>
-     					<paper-ripple fit></paper-ripple>
-     				</div>	
-     			</a>	
-     		</div>
-			<!--To here-->
-			
-			<!-- If needed, delete from here-->
-     		<div class="works-card">
-     			<a href="Nathan.html">
-     				<div class="works-subcard">
-     					<img class="top-corners-rounded" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f3/f30f6a6bcb41e05aec3b8b3c930c5a24d5c1729e_full.jpg" style="width: 100%"></img>
-     					<span class="work-title">ImNathanT</span>
-	     				<paper-ripple fit></paper-ripple>
-	     			</div>
-     			</a>		
-     		</div>
-			<!--To here-->
-			
-			<!-- If needed, delete from here
-     		<div class="works-card">
-     			<a href="">
-     				<div class="works-subcard">
-     					<img class="top-corners-rounded" src="img/otherapps/placeholder_five.png" style="width: 100%"></img>
-     					<span class="work-title">App Name</span>
-	     				<paper-ripple fit></paper-ripple>
-	     			</div>	
-     			</a>	
-     		</div>
-            To here-->
-			
-			<!-- If needed, delete from here
-     		<div class="works-card">
-     			<a href="	">
-     					<div class="works-subcard">
-     					<img class="top-corners-rounded" src="img/otherapps/placeholder_six.png" style="width: 100%"></img>
-     					<span class="work-title">App Name</span>
-     						<paper-ripple fit></paper-ripple> 
-	     				</div>	
-     			</a>		
-     		</div>
-			To here-->
+            <div id="cardwrap">
+                <div class="works-card">
+                    <a href="index.html">
+                        <div class="works-subcard">
+                            <img id="work-img" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/85/8505f602b3a8e09e332fdc53f4006f59c780dd00_full.jpg"></img>
+                            <span class="work-title">Mig_Mikkel</span> 
+                            <paper-ripple fit></paper-ripple>
+                        </div>
+                    </a>		
+                </div>
+                <!-- To here-->
+
+                <!-- If needed, delete from here -->
+                <div class="works-card">
+                    <a href="Chromax.html">
+                        <div class="works-subcard">
+                            <img id="work-img" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c0/c025910d865cf3df1e9df04041e1820c13d038f2_full.jpg"></img>
+                            <span class="work-title">Divide</span> 
+                            <paper-ripple fit></paper-ripple>
+                        </div>	
+                    </a>	
+                </div>
+                <!-- To here-->
+
+                <!-- If needed, delete from here -->
+                <div class="works-card">
+                    <a href="MrBob.html">
+                        <div class="works-subcard">
+                            <img id="work-img" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f7/f7bb8347f8787ead3d199136af166fbcbacfed0c_full.jpg"></img>
+                            <span class="work-title">Chr0max</span>
+                            <paper-ripple fit></paper-ripple>
+                        </div>	
+                    </a>	
+                </div>
+                <!--To here-->
+
+                <!-- If needed, delete from here-->
+                <div class="works-card">
+                    <a href="Nathan.html">
+                        <div class="works-subcard">
+                            <img id="work-img" src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f3/f30f6a6bcb41e05aec3b8b3c930c5a24d5c1729e_full.jpg"></img>
+                            <span class="work-title">ImNathanT</span>
+                            <paper-ripple fit></paper-ripple>
+                        </div>
+                    </a>		
+                </div>
+                <!--To here-->
+
+                <!-- If needed, delete from here
+                <div class="works-card">
+                    <a href="">
+                        <div class="works-subcard">
+                            <img id="work-img" src="img/otherapps/placeholder_five.png"></img>
+                            <span class="work-title">App Name</span>
+                            <paper-ripple fit></paper-ripple>
+                        </div>	
+                    </a>	
+                </div>
+                To here-->
+
+                <!-- If needed, delete from here
+                <div class="works-card">
+                    <a href="	">
+                            <div class="works-subcard">
+                            <img id="work-img" src="img/otherapps/placeholder_six.png"></img>
+                            <span class="work-title">App Name</span>
+                                <paper-ripple fit></paper-ripple> 
+                            </div>	
+                    </a>		
+                </div>
+                To here-->
+            </div>
      	</div><br><br>
 		
 		

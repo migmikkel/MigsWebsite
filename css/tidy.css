@@ -80,6 +80,11 @@ a:active
 	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
 }
 
+#cardwrap {
+    margin: 0%;
+    margin-left: 1%;
+}
+
 .works-card
 {
 	width: 192px;
@@ -87,11 +92,7 @@ a:active
 	float: left;
 	padding: 0%;
     overflow: hidden;
-    padding-bottom: 1.2%;
-}
-
-.card1 {
-    margin-left: 1%;
+/*    padding-bottom: 1.2%;*/
 }
 	
 .works-subcard
@@ -106,9 +107,11 @@ a:active
 .works-subcard:hover
 {
 	cursor: pointer;
+/*
 	box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
 	-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
 	-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 5px 12px 0;
+*/
 }
 
 .work-title
@@ -119,6 +122,7 @@ a:active
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     transition: margin-top 0.2s;
+    margin-bottom: 10px;
 }
 
 #work-img
@@ -330,7 +334,7 @@ a:active
 		
 	.works-card
 	{
-		width: 33.33%
+/*		width: 33.33%*/
 	}
 }
 
